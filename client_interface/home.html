@@ -6,10 +6,17 @@
 <body>
     <form id="connect-form" action="#">
         <label>URL</label>
-        <input type="text" name="url" id="url">
+        <input type="text" name="url" id="url" value="ws://localhost:5000/ws">
+        <label>Username</label>
+        <input type="text" name="username" id="username" value="name3anad">
         <button>Connect</button>
     </form>
 
+    <ul id="thread"></ul>
+    <form id="message-form" action="#">
+        <textarea id="message"></textarea>
+        <button>Send</button>
+    </form>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/sockets.js"></script>
 </body>
